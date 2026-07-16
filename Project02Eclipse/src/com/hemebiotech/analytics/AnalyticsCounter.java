@@ -21,7 +21,6 @@ public class AnalyticsCounter {
 			System.out.println("symptom from file: " + line);
 			if (line.equals("headache")) {
 				headacheCount++; // error: syntax 'headCount'
-				System.out.println("number of headaches: " + headCount);
 			}
 			else if (line.equals("rash")) { // error: syntax 'rash'
 				rashCount++;
@@ -37,7 +36,7 @@ public class AnalyticsCounter {
 		FileWriter writer = new FileWriter ("result.out");
 		writer.write("headache: " + headacheCount + "\n");
 		writer.write("rash: " + rashCount + "\n");
-		writer.write("dialated pupils: " + pupilCount + "\n");
+		writer.write("dilated pupils: " + pupilCount + "\n");
 		writer.close();
 	}
 }
