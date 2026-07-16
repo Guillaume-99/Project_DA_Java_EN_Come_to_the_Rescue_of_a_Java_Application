@@ -11,10 +11,10 @@ public class Main {
         AnalyticsCounter analyticsCounter = new AnalyticsCounter(symptomReader, symptomWriter);
 
         List<String> symptomsList = analyticsCounter.getSymptoms();
-        Map<String,Integer> countSymptoms = analyticsCounter.countSymptoms(symptomsList);
-        Map<String,Integer> sortSymptoms = analyticsCounter.sortSymptoms(countSymptoms);
+        Map<String, Integer> countSymptoms = analyticsCounter.countSymptoms(symptomsList);
+        Map<String, Integer> sortSymptoms = analyticsCounter.sortSymptoms(countSymptoms);
         analyticsCounter.writeSymptoms(sortSymptoms);
-
+        System.out.println("Ecriture terminee");
 
     }
 }
